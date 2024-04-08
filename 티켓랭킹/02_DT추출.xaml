@@ -15,7 +15,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1152,1429</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1218,2263</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_01_웹추출_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -123,7 +123,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="전체 url : http://ticket.yes24.com/New/Rank/Ranking.aspx + 공백&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15456&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15457&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15458&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15459&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15460&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=999&#xA;&#xA;=&gt; &quot;http://ticket.yes24.com/New/Rank/Ranking.aspx&quot; + &quot;?genre=&quot;" DisplayName="_02_웹추출" sap:VirtualizedContainerService.HintSize="529,1364" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="전체 url : http://ticket.yes24.com/New/Rank/Ranking.aspx + 공백&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15456&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15457&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15458&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15459&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15460&#xA;- http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=999&#xA;&#xA;=&gt; &quot;http://ticket.yes24.com/New/Rank/Ranking.aspx&quot; + &quot;?genre=&quot;" DisplayName="_02_웹추출" sap:VirtualizedContainerService.HintSize="625,2198" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="dicRanking" />
       <Variable x:TypeArguments="sd:DataTable" Name="ExtractDataTable1" />
@@ -135,19 +135,19 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="467,1129" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+    <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="563,1963" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
       <ui:IfElseIf.ConditionBlocks>
         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
           <ui:IfElseIfBlock BlockType="If" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;전체&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,439" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -238,7 +238,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -306,23 +306,15 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
@@ -337,7 +329,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -405,23 +397,15 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
@@ -436,7 +420,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -504,29 +488,21 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
             </ui:IfElseIfBlock.Then>
           </ui:IfElseIfBlock>
-          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;클래식/무용&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;클래식무용&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
             <ui:IfElseIfBlock.Then>
               <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_22">
                 <sap:WorkflowViewStateService.ViewState>
@@ -535,7 +511,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -603,29 +579,21 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
             </ui:IfElseIfBlock.Then>
           </ui:IfElseIfBlock>
-          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;전시/행사&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;전시행사&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
             <ui:IfElseIfBlock.Then>
               <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_25">
                 <sap:WorkflowViewStateService.ViewState>
@@ -634,7 +602,7 @@
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -702,38 +670,30 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
             </ui:IfElseIfBlock.Then>
           </ui:IfElseIfBlock>
-          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;아동/가족&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
+          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[in_TransactionItem(&quot;랭킹리스트&quot;).ToString.Trim = &quot;아동가족&quot;]" DisplayName="If else if block" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
             <ui:IfElseIfBlock.Then>
-              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="Sequence_28">
+              <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="416,439" sap2010:WorkflowViewState.IdRef="Sequence_28">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2">
+                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="354,65" sap2010:WorkflowViewState.IdRef="NApplicationCard_15" InteractionMode="DebuggerApi" ScopeGuid="742580f4-fabe-408d-ba10-403b2e4e1c7d" Version="V2" WindowResize="Maximize">
                   <uix:NApplicationCard.Body>
                     <ActivityAction x:TypeArguments="x:Object">
                       <ActivityAction.Argument>
@@ -801,23 +761,15 @@
                 </uix:NApplicationCard>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\03_DT가공.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,153" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="티켓랭킹\03_DT가공.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InOutArgument>
-                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">
-                      <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable2" />
-                    </InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable1">[ExtractDataTable1]</InOutArgument>
+                    <InOutArgument x:TypeArguments="sd:DataTable" x:Key="io_ExtractDataTable2">[ExtractDataTable2]</InOutArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="티켓랭킹\04_DT기록.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="354,136" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="티켓랭킹\04_DT기록.xaml">
                   <ui:InvokeWorkflowFile.Arguments>
                     <InArgument x:TypeArguments="sd:DataTable" x:Key="dt" />
-                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">
-                      <VisualBasicValue x:TypeArguments="sd:DataRow" ExpressionText="in_TransactionItem" />
-                    </InArgument>
-                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">
-                      <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="ExtractDataTable1" />
-                    </InArgument>
+                    <InArgument x:TypeArguments="sd:DataRow" x:Key="in_TransactionItem">[in_TransactionItem]</InArgument>
+                    <InArgument x:TypeArguments="sd:DataTable" x:Key="in_ExtractDataTable">[ExtractDataTable1]</InArgument>
                   </ui:InvokeWorkflowFile.Arguments>
                 </ui:InvokeWorkflowFile>
               </Sequence>
