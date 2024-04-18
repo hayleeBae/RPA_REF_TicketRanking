@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>947,1314</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>582,1496</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_01_리스트추출_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -112,7 +112,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="사이트 접속해서 리스트 항목에 해당하는 DT 추출(항목, URL)&#xA;항목-URL을 딕셔너리로 생성&#xA;&#xA;데이터에서 '/' 문자 제거 -&gt; 시트명으로 활용 위해서 나중 처리" DisplayName="_01_리스트추출" sap:VirtualizedContainerService.HintSize="592,1250" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="사이트 접속해서 리스트 항목에 해당하는 DT 추출(항목, URL)&#xA;항목-URL을 딕셔너리로 생성&#xA;&#xA;데이터에서 '/' 문자 제거 -&gt; 시트명으로 활용 위해서 나중 처리" DisplayName="_01_리스트추출" sap:VirtualizedContainerService.HintSize="592,1431" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtRanking" />
     </Sequence.Variables>
@@ -123,6 +123,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="530,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;카테고리와 URL DT 추출&quot;]" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="사이트 접속 | Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,526" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="a8e7c068-be96-4443-afab-59e9eba03fb5" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">

@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1228,818</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1177,826</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_04_DT기록_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,9 +119,9 @@
         <OutArgument x:TypeArguments="x:String">[SheetName]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[in_TransactionItem.ToString.Trim.Replace("/", "")]</InArgument>
+        <InArgument x:TypeArguments="x:String">[in_TransactionItem("추출항목").ToString.Trim.Replace("/", "")]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[in_ExtractDataTable]" DisplayName="DT 기록 | Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[SheetName]" WorkbookPath="[&quot;Data\Output\티켓랭킹_&quot; + Today.ToString(&quot;yyyy/MM/dd&quot;)  + &quot;_배혜빈.xlsx&quot;]" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[in_ExtractDataTable]" DisplayName="DT 기록 | Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[SheetName]" WorkbookPath="[&quot;Data\Output\티켓랭킹_&quot; + DateTime.Today.ToString(&quot;yyyyMMdd&quot;) + &quot;_배혜빈.xlsx&quot;]" />
   </Sequence>
 </Activity>

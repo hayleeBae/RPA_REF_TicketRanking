@@ -9,7 +9,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>947,1451</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>531,1644</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_01_변수처리_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -96,7 +96,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="메일타이틀은 포함할 날짜와 [ ] 를 입력받아서 그 값을 조회&#xA;&#xA;listTitle, listContents 변수에서 필요한 메일 내용 추출&#xA;- 추출 항목&#xA;- 추출 일자" DisplayName="_01_변수처리" sap:VirtualizedContainerService.HintSize="541,1386" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="메일타이틀은 포함할 날짜와 [ ] 를 입력받아서 그 값을 조회&#xA;&#xA;listTitle, listContents 변수에서 필요한 메일 내용 추출&#xA;- 추출 항목&#xA;- 추출 일자" DisplayName="_01_변수처리" sap:VirtualizedContainerService.HintSize="541,1579" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="InputTitle" />
       <Variable x:TypeArguments="x:String" Name="InputDate" />
@@ -108,6 +108,7 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="479,181" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;사용자 입력 받아 변수 가공&quot;]" />
     <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="날짜 입력 | Input Dialog" sap:VirtualizedContainerService.HintSize="479,65" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="날짜를 입력하세요 -&gt; yyyy/MM/dd" Title="사용자 날짜 입력">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[InputDate]</OutArgument>
@@ -130,7 +131,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InputDialog>
-    <Assign sap2010:Annotation.AnnotationText="String.Join(&quot;, &quot;, (From item In in_listTitle &#xA;Where System.Text.RegularExpressions.Regex.IsMatch(item, &quot;.*&quot; + InputDate + &quot;.*&quot;)).ToArray)&#xA;&#xA;.*: 임의의 문자(0개 이상), 어떤 문자열도 포함" DisplayName="입력 날짜로 해당 데이터만 남기기 | Assign" sap:VirtualizedContainerService.HintSize="479,212" sap2010:WorkflowViewState.IdRef="Assign_4">
+    <Assign sap2010:Annotation.AnnotationText="String.Join(&quot;, &quot;, (From item In in_listTitle &#xA;Where System.Text.RegularExpressions.Regex.IsMatch(item, &quot;.*&quot; + InputDate + &quot;.*&quot;)).ToArray)&#xA;&#xA;.*: 임의의 문자(0개 이상), 어떤 문자열도 포함" DisplayName="입력 날짜로 해당 데이터만 남기기 | Assign" sap:VirtualizedContainerService.HintSize="479,210" sap2010:WorkflowViewState.IdRef="Assign_4">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_MailTitle]</OutArgument>
       </Assign.To>
@@ -146,7 +147,7 @@ Where System.Text.RegularExpressions.Regex.IsMatch(item, ".*" + InputDate + ".*"
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="String.Join(&quot;, &quot;, (From item In in_listTitle Where System.Text.RegularExpressions.Regex.IsMatch(item, &quot;.*&quot; + InputTitle + &quot;.*&quot;)).ToArray)" DisplayName="입력 타이틀 해당 str변수 생성 | Assign" sap:VirtualizedContainerService.HintSize="479,182" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap2010:Annotation.AnnotationText="String.Join(&quot;, &quot;, (From item In in_listTitle Where System.Text.RegularExpressions.Regex.IsMatch(item, &quot;.*&quot; + InputTitle + &quot;.*&quot;)).ToArray)" DisplayName="입력 타이틀 해당 str변수 생성 | Assign" sap:VirtualizedContainerService.HintSize="479,180" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[out_MailTitle]</OutArgument>
       </Assign.To>
@@ -162,7 +163,7 @@ Where System.Text.RegularExpressions.Regex.IsMatch(item, ".*" + InputTitle + ".*
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <Assign sap2010:Annotation.AnnotationText="리스트에서 몇 번째 아이템인지 가져올 수 있나?&#xA;yourList.FindIndex(Function(item) &#xA;in_listTitle.FindIndex(Function(item) item = out_MailTitle)" sap:VirtualizedContainerService.HintSize="479,178" sap2010:WorkflowViewState.IdRef="Assign_6">
+    <Assign sap2010:Annotation.AnnotationText="리스트에서 몇 번째 아이템인지 가져올 수 있나?&#xA;yourList.FindIndex(Function(item) &#xA;in_listTitle.FindIndex(Function(item) item = out_MailTitle)" sap:VirtualizedContainerService.HintSize="479,179" sap2010:WorkflowViewState.IdRef="Assign_6">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">[ListIndex]</OutArgument>
       </Assign.To>
@@ -175,7 +176,7 @@ Where System.Text.RegularExpressions.Regex.IsMatch(item, ".*" + InputTitle + ".*
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Assign>
-    <ui:MultipleAssign sap2010:Annotation.AnnotationText="해당하는 인덱스 값을 가져오고 &#xA;그 안에서 정규표현식 해당하는 값 가져오기&#xD;&#xA;&#xD;&#xA;Dim regexPattern As String = &quot;- 추출 일자\s*:\s*\d{4}/\d{2}/\d{2}&quot;&#xD;&#xA;Dim match As Match = System.Text.RegularExpressions.Regex.Match(out_MailContents, regexPattern)&#xD;&#xA;Dim extractedValue As String = match.Value&#xD;&#xA;&#xD;&#xA;&quot;- 추출 일자\s*:\d{4}/\d{2}/\d{2}&quot;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,396" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
+    <ui:MultipleAssign sap2010:Annotation.AnnotationText="해당하는 인덱스 값을 가져오고 &#xA;그 안에서 정규표현식 해당하는 값 가져오기&#xA;&#xA;Dim regexPattern As String = &quot;- 추출 일자\s*:\s*\d{4}/\d{2}/\d{2}&quot;&#xA;Dim match As Match = System.Text.RegularExpressions.Regex.Match(out_MailContents, regexPattern)&#xA;Dim extractedValue As String = match.Value&#xA;&#xA;&quot;- 추출 일자\s*:\d{4}/\d{2}/\d{2}&quot;&#xA;&quot;- 추출 일자\s*:\s*(\d{4}/\d{2}/\d{2})&quot;" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="479,411" sap2010:WorkflowViewState.IdRef="MultipleAssign_3">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
@@ -191,7 +192,7 @@ Where System.Text.RegularExpressions.Regex.IsMatch(item, ".*" + InputTitle + ".*
               <OutArgument x:TypeArguments="x:String">[out_MailContents]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(out_MailContents, "- 추출 항목\s*:\s*(.*)").Value.ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(out_MailContents, "- 추출 항목\s*:\s*(.*)").Value.ToString.Trim]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
@@ -207,7 +208,7 @@ Where System.Text.RegularExpressions.Regex.IsMatch(item, ".*" + InputTitle + ".*
               <OutArgument x:TypeArguments="x:String">[out_MailDate]</OutArgument>
             </ui:AssignOperation.To>
             <ui:AssignOperation.Value>
-              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(out_MailContents, "- 추출 일자\s*:\s*\d{4}/\d{2}/\d{2}").Value.ToString]</InArgument>
+              <InArgument x:TypeArguments="x:String">[System.Text.RegularExpressions.Regex.Match(out_MailDate, "- 추출 일자\s*:\s*(\d{4}/\d{2}/\d{2})").Value.ToString.Trim]</InArgument>
             </ui:AssignOperation.Value>
           </ui:AssignOperation>
         </scg:List>
