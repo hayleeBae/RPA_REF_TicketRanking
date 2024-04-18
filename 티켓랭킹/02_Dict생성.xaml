@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>531,747</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1228,818</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>_02_Dict생성_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -72,7 +72,7 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="전체 url : http://ticket.yes24.com/New/Rank/Ranking.aspx&#xA;콘서트 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15456&#xA;뮤지컬 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15457&#xA;연극 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15458&#xA;클래식무용 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15459&#xA;전시행사 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15460&#xA;아동가족 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=999&#xA;&#xA;=&gt; &quot;http://ticket.yes24.com/New/Rank/Ranking.aspx&quot; + &quot;?genre=&quot;" DisplayName="_02_Dict생성" sap:VirtualizedContainerService.HintSize="541,682" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="01_리스트추출에서 한번에 처리 가능 -&gt; 생략&#xD;&#xA;&#xD;&#xA;전체 url : http://ticket.yes24.com/New/Rank/Ranking.aspx&#xA;콘서트 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15456&#xA;뮤지컬 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15457&#xA;연극 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15458&#xA;클래식무용 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15459&#xA;전시행사 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=15460&#xA;아동가족 url : http://ticket.yes24.com/New/Rank/Ranking.aspx?genre=999&#xA;&#xA;=&gt; &quot;http://ticket.yes24.com/New/Rank/Ranking.aspx&quot; + &quot;?genre=&quot;" DisplayName="_02_Dict생성" sap:VirtualizedContainerService.HintSize="541,712" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Name="dicList" />
     </Sequence.Variables>
